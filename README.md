@@ -8,8 +8,9 @@ This project contains solution to **Problem Statement: Restaurant Finder**
 - Repeated code refactored
 
 "**Part 3: Failing test case**" contains:
- - Test Cases written for order value method
+ - Test Cases for the implemented order value method
  
 "**Part 3: Solution**" contains:
 - Implemented feature for calculating order value
 - Passing test cases for the implemented order value method
+
