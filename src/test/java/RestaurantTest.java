@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RestaurantTest {
     Restaurant restaurant;
+/*
     //REFACTORED CODE
    @BeforeEach
     public void addRestaurantDetails() {
@@ -33,7 +34,7 @@ class RestaurantTest {
        assertTrue(restaurant.isRestaurantOpen());
     }
 
- /*   // FAILING TEST CASE FOR RESTAURANT OPEN SCENARIO
+    // FAILING TEST CASE FOR RESTAURANT OPEN SCENARIO
    @Test
     public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
        LocalTime openingTime = LocalTime.now().plusHours(1);
@@ -42,9 +43,9 @@ class RestaurantTest {
        assertFalse(restaurant.isRestaurantOpen());
     }
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-*/
+
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>MENU<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    // Pasi
+
     @Test
     public void adding_item_to_menu_should_increase_menu_size_by_1(){
         int initialMenuSize = restaurant.getMenu().size();
@@ -57,14 +58,14 @@ class RestaurantTest {
         restaurant.removeFromMenu("Vegetable lasagne");
         assertEquals(initialMenuSize-1,restaurant.getMenu().size());
     }
-  /*  @Test
+   @Test
     public void removing_item_that_does_not_exist_should_throw_exception() {
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-    //Failing Test case for orderValue method//
+*/
+    // This is the Test case for orderValue method//
     @Test
     public void select_item_from_list_should_return_order_value(){
         int orderValue;
@@ -72,6 +73,6 @@ class RestaurantTest {
         orderValue = restaurant.getOrderValue(selectedItemNames) ;
         assertEquals(388, orderValue);
     }
-    */
+
 
 }
