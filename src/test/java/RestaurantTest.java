@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RestaurantTest {
     Restaurant restaurant;
-/*
+
     //REFACTORED CODE
    @BeforeEach
     public void addRestaurantDetails() {
@@ -23,7 +23,7 @@ class RestaurantTest {
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
     }
-
+/*
     //>>>>>>>>>>>>>>>>>>>>>>>>>OPEN/CLOSED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     // PASSING TEST CASE FOR RESTAURANT OPEN SCENARIO
     @Test

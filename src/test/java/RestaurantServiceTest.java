@@ -26,15 +26,13 @@ class RestaurantServiceTest {
         String restaurantName = "Amelie's cafe";
         assertTrue(service.findRestaurantByName(restaurantName).getName().equals(restaurantName));
     }
-
-  /*  // FAILING TEST CASE FOR RESTAURANT SHOULD RETURN EXPECTED OBJECT
+    // FAILING TEST CASE FOR RESTAURANT SHOULD RETURN EXPECTED OBJECT
     @Test
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         assertThrows(restaurantNotFoundException.class, () -> service.findRestaurantByName("Coffee Cup"),"Error: Restaurant could not be found");
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-*/
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     // PASSING TEST CASE FOR RESTAURANT SHOULD REDUCE LIST OF RESTAURANTS
     @Test
@@ -44,13 +42,12 @@ class RestaurantServiceTest {
         service.removeRestaurant("Amelie's cafe");
         assertEquals(initialNumberOfRestaurants-1, service.getRestaurants().size());
     }
-
-   /* // FAILING TEST CASE FOR REMOVING RESTAUARANT FROM LIST
+/*
+    // FAILING TEST CASE FOR REMOVING RESTAUARANT FROM LIST
     @Test
     public void removing_restaurant_that_does_not_exist_should_throw_exception() throws restaurantNotFoundException {
         assertThrows(restaurantNotFoundException.class,()->service.removeRestaurant("Pantry d'or"));
     }
-*/
     // PASSING TEST CASE FOR RESTAURANT SHOULD INCREASE LIST OF RESTAURANTS
     @Test
     public void add_restaurant_should_increase_list_of_restaurants_size_by_1(){
@@ -60,5 +57,7 @@ class RestaurantServiceTest {
         assertEquals(initialNumberOfRestaurants + 1,service.getRestaurants().size());
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
 }
 
