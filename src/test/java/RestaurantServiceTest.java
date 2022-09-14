@@ -42,7 +42,7 @@ class RestaurantServiceTest {
         service.removeRestaurant("Amelie's cafe");
         assertEquals(initialNumberOfRestaurants-1, service.getRestaurants().size());
     }
-/*
+
     // FAILING TEST CASE FOR REMOVING RESTAUARANT FROM LIST
     @Test
     public void removing_restaurant_that_does_not_exist_should_throw_exception() throws restaurantNotFoundException {
@@ -57,7 +57,7 @@ class RestaurantServiceTest {
         assertEquals(initialNumberOfRestaurants + 1,service.getRestaurants().size());
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
-*/
+
 
 }
 
