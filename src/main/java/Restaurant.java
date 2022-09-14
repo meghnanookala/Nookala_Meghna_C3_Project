@@ -17,7 +17,7 @@ public class Restaurant {
         this.openingTime = openingTime;
         this.closingTime = closingTime;
     }
-/*
+
        public boolean isRestaurantOpen() {
            LocalTime currentTime = getCurrentTime();
 
@@ -31,7 +31,7 @@ public class Restaurant {
             return Collections
                     .unmodifiableList(menu);
         }
-*/
+
         private Item findItemByName(String itemName){
         for(Item item: menu) {
             if(item.getName().equals(itemName))
@@ -44,7 +44,7 @@ public class Restaurant {
             Item newItem = new Item(name,price);
             menu.add(newItem);
         }
-/*
+
         public void removeFromMenu(String itemName) throws itemNotFoundException {
 
             Item itemToBeRemoved = findItemByName(itemName);
@@ -61,7 +61,7 @@ public class Restaurant {
                     +"Menu:"+"\n"+getMenu());
 
         }
-*/
+
         public String getName() {
             return name;
         }
