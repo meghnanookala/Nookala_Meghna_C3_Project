@@ -35,4 +35,4 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: 'https://github.com/meghnanookala/Nookala_Meghna_C3_Project/tree/main/src/test/java'
